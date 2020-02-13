@@ -62,7 +62,7 @@ transformed_dataframe = transformed_dataframe[extracted_feature]
 
 # TESTING
 print(dataframe)
-transformed_dataframe.to_csv("./dumpcsv", encoding='utf-8', index=False)
+transformed_dataframe.to_csv("./feature_matrix", encoding='utf-8', index=False)
 
 # PREDICTION
 predictions = model.predict(transformed_dataframe)
